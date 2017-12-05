@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WebSocketIO</title>
+
+</head>
+<body>
+    <div id="app">
+        <div>
+            <textarea cols="120" rows="30" v-text="text_content" disabled></textarea>
+        </div>
+        <div>
+            <input v-model="input_text" type="text" />
+        </div>
+        <div>
+            <input type="submit" @click="submit" />
+        </div>
+    </div>
+    
+    <script src="https://unpkg.com/eventemitter3@latest/umd/eventemitter3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="./WebSocketIO.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
